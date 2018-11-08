@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+  <EditText
+    android:id="@+id/input_weight"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="68dp"
+    android:ems="10"
+    android:inputType="numberDecimal"
+    android:text="Name"
+    app:layout_constraintEnd_toEndOf="@+id/input_height"
+    app:layout_constraintStart_toStartOf="@+id/input_height"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+    android:id="@+id/input_height"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="23dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:text="Name"
+    app:layout_constraintEnd_toEndOf="@+id/btn_send_data"
+    app:layout_constraintStart_toStartOf="@+id/btn_send_data"
+    app:layout_constraintTop_toBottomOf="@+id/input_weight" />
+
+  <Button
+    android:id="@+id/btn_send_data"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="21dp"
+    android:text="calculate BMI"
+    app:layout_constraintEnd_toEndOf="@+id/txt_bmi"
+    app:layout_constraintStart_toStartOf="@+id/txt_bmi"
+    app:layout_constraintTop_toBottomOf="@+id/input_height" />
+
+  <TextView
+    android:id="@+id/txt_bmi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="33dp"
+    android:text="TextView"
+    android:textSize="36sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_send_data" />
+</android.support.constraint.ConstraintLayout>

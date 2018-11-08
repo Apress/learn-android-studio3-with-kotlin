@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">CH13AppBar</string>
+  <string name="menuExit">Exit</string>
+  <string name="menuHelp">Help</string>
+  <string name="menuEdit">Edit</string>
+  <string name="menuFile">File</string>
+</resources>
